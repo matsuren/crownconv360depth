@@ -1,0 +1,11 @@
+name: crownconv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.7
+  - igl
+  - meshplot 
+  - imgaug
+  - tensorboard
+  - tqdm

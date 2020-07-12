@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.lock
+*.pth
+*.npz
+
+.ipynb_checkpoints/
+.idea/
+
+checkpoints/
+checkpoints_eval/
+raw_data/
+datasets
