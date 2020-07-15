@@ -1,5 +1,10 @@
 # IcoSweepNet using CrownConv
-PyTorch implementation of our IROS 2020 paper [360° Depth Estimation from Multiple Fisheye Images with Origami Crown Representation of Icosahedron](https://github.com/matsuren/crownconv360depth). 
+PyTorch implementation of our IROS 2020 paper 
+[360° Depth Estimation from Multiple Fisheye Images with Origami Crown Representation of Icosahedron](#). 
+The preprint is available in [arXiv](https://arxiv.org/abs/2007.06891).
+
+[![iros_video](https://img.youtube.com/vi/_vVD-zDMvyM/0.jpg)](https://youtu.be/_vVD-zDMvyM)
+
 
 ## Publication
 Ren Komatsu, Hiromitsu Fujii, Yusuke Tamura, Atsushi Yamashita and Hajime Asama, "360° Depth Estimation from Multiple Fisheye Images with Origami Crown Representation of Icosahedron", Proceedings of the 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2020), 2020.
@@ -24,9 +29,20 @@ pip install git+git://github.com/matsuren/ocamcalib_undistort.git
 ```
 
 ## Dataset
-The dataset is available from [here](http://cvlab.hanyang.ac.kr/project/omnistereo/).
+Please download datasets from [Omnidirectional Stereo Dataset](http://cvlab.hanyang.ac.kr/project/omnistereo/).
 We use `OmniThings` for training and `OmniHouse` for evaluation.
 
 
 ## Training
-Coming soon!
+```bash
+python train.py $DATASETS/omnithings 
+```
+_Type `python train.py -h` to display other available options._
+
+## Evaluation
+```bash
+python evaluation.py $DATASETS/omnihouse checkpoints/checkpoints_{i}.pth --save_depth
+```
+_Type `python train.py -h` to display other available options._
+
+The more detailed information is coming soon!
