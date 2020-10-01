@@ -32,6 +32,10 @@ pip install git+git://github.com/matsuren/ocamcalib_undistort.git
 Please download datasets from [Omnidirectional Stereo Dataset](http://cvlab.hanyang.ac.kr/project/omnistereo/).
 We use `OmniThings` for training and `OmniHouse` for evaluation.
 
+:exclamation:Attention:exclamation:  
+For some reasons, some filenames are inconsistent in `OmniThings`.
+For instance, the first image is named `00001.png` in `cam1`, but, it is named `0001.png` for `cam2`, `cam3`, and `cam4`. So please rename `0001.png`, `0002.png`, and `0003.png` so that they have five-digit numbers.
+
 
 ## Training
 ```bash
