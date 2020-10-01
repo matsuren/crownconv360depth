@@ -44,6 +44,9 @@ python train.py $DATASETS/omnithings
 _Type `python train.py -h` to display other available options._
 
 ## Evaluation
+
+One of the pretrained models is available [here](https://1drv.ms/u/s!Ao6oo2sMuht4tyrqjJbchskcqM-r?e=9TbnH5).
+
 ```bash
 python evaluation.py $DATASETS/omnihouse checkpoints/checkpoints_{i}.pth --save_depth
 ```
