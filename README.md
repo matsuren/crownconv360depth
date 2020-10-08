@@ -1,4 +1,8 @@
 # IcoSweepNet using CrownConv
+[![arXiv](https://img.shields.io/badge/arXiv-2007.06891-b31b1b.svg)](https://arxiv.org/abs/2007.06891)
+![GitHub](https://img.shields.io/github/license/matsuren/crownconv360depth)
+![YouTube Video Views](https://img.shields.io/youtube/views/_vVD-zDMvyM)
+
 PyTorch implementation of our IROS 2020 paper 
 [360° Depth Estimation from Multiple Fisheye Images with Origami Crown Representation of Icosahedron](#). 
 The preprint is available in [arXiv](https://arxiv.org/abs/2007.06891).
