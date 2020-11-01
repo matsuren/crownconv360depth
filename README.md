@@ -56,4 +56,12 @@ python evaluation.py $DATASETS/omnihouse checkpoints/checkpoints_{i}.pth --save_
 ```
 _Type `python train.py -h` to display other available options._
 
-The more detailed information is coming soon!
+## Depth visualization
+
+The depth is estimated on icosahedron. So, you can't see the results as depth map.
+The easiest thing to visualize is to convert the depths on icosaehdron into equirectangular images, 
+which can be done by executing the following command.
+
+```bash
+python visualize_depth.py DEPTH_FILE(.npy)
+```
